@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+</title>
+	
+<link rel="stylesheet" type="text/css">
+
+<style type="text/css">
+		*{font-family: "Sans serif"}
+
+	div{
+			border: 0px black solid;
+			position: absolute;
+		}
+
+	.top{
+			width: 100%;	
+			height:125px;
+			top: 0px;
+			left: 0%;
+			}
+
+	.top1{
+			width: 100%;	
+			height:35px;
+			top: 125px;
+			left: 0%;
+			background-color: #093081;
+			font-color: #000000;}
+	.top2{
+			width: 70%;	
+			height:25px;
+			top: 160px;
+			left: 0%;
+			padding-left: 15%;
+			padding-right: 15%;
+			background-color: #66ffff;
+			}
+
+.left 
+{			width: 15%;
+			height: 550px;
+			top: 185px;
+			left: 0px;
+			background-color: #D8D8D8;
+	}
+			
+.mid{
+			width: 70%;
+			height: 550px;
+			top: 185px;
+			left: 15%;
+	}
+
+.right{
+			width: 15%;
+			height: 550px;
+			top: 185px;
+			left: 85%;
+			background-color: #D8D8D8;
+}
+
+.bot{
+			width: 100%;
+			height: 100px;
+			top: 735px;
+			left: 0%;
+			background-color: #8D8D8D;
+}
+table{
+	margin-left: 15%;
+}
+
+.img{
+			width: 100px;
+			height: 100px;
+			padding: 10px;
+			padding-left: 15%;
+			float:left;
+	}
+.h1{
+			color: #134181;
+			padding-top: 6px;
+			float:left; }
+ .a{
+ 	text-decoration:none;
+ 	color: white;
+ }
+
+h4{color: white}
+
+h3{
+			color: white;
+			text-align: center;
+			padding-top: 15px;
+}
+
+h2{
+		padding: 10px;
+		margin: auto;
+		color: black;
+}
+
+p{
+			padding: 10px;
+
+			font-size: 20px;}
+
+
+.but_span{
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			display: block;
+			background-color: #8D8D8D;
+			border-radius: 20px;
+			text-align:center;
+			font-color:#000000;
+}
+.span1{
+			width: 100%;
+			margin:auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size: 20px;
+			display: block;
+			background-color: #66ffff;
+			border-radius: 20px;
+			text-align:center;
+			font-color:#000000;
+}
+
+.span2{
+			width: 55%;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			display: block;
+			background-color: #8D8D8D;
+			border-radius: 20px;
+			text-align:center;
+			font-color:#D8D8D8;
+}
+.table{
+	padding-left: 18%;
+}
+
+b{
+			color: white;
+}
+article{
+			background-color: #5c5c5c;
+			width: 80%;
+			height: 100px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+			color: white;
+}
+.ad{font-size: 15px;
+text-align: center
+font-color: #D8D8D8;
+}
+.img2{
+	padding-top: 50px;
+	height: 80px;
+	width: 80px;
+	float: left;
+	padding-left: 50px;
+}
+</style>
+<script >
+	function showtext1()
+		{
+
+ 		var text = document.getElementById("admin").value;
+ 		var text2 =document.getElementById("password").value;
+    		if (text == null || text == "") 
+    		{
+        		alert("give admin name first........");
+        		document.getElementById("ad").style.color="red";
+        		return false;
+    		}
+    		 
+		if (text2 == null || text2 == "" || text2.length < 5 || text2.length>10) 
+    		{
+        		alert("Give  5 to 10 length secret password......");
+        		document.getElementById("pass").style.color="red";
+        		return false;
+    		}
+    		  if((text=="parth" && text2=="12345678") || (text=="nirav" && text2=="1234567") || (text=="harsh" && text2=="123456") || (text=="shiv" && text2=="1234567"))
+    		{
+				 document.cookie=text;	
+    			return true;
+
+    		}   
+		  else
+    		{
+    			alert("invalid admin or password........");
+    			return false;
+
+    		}  
+		}
+		function check()
+		{
+			
+				alert("first login user");
+			
+		}
+</script>
+
+</head>
+<body>
+
+
+<div class="top">
+
+	<img class="img" src="head.png" >
+	<b><p class="h1"><font size=6>Commissionerate of Transport</font><br>
+	<font size="4">Department of Port and Transport, Government of Gujarat</font></p></b>
+</div>
+<div class="top1">
+	<table border="0.1" frame="box" bordercolor=white cellpadding="10">
+		<tr>
+			<td >
+				<font color="white"><a href=RTO.html class="a" >Home</font>
+			</td>
+			<td >
+				<font color="white"><a href=admin.html class="a">admin Login</font>
+			</td>
+			<td>
+				<font color="white"><a href=about.html class="a">About Us</font>
+			</td>
+			<td>
+				<font color="white">Act & Rules</font>
+			</td>
+			<td>
+				<font color="white">Processes</font>
+			</td>
+			<td>
+				<font color="white">Statistics</font>
+			</td>
+			<td>
+				<font color="white">Forms</font>
+
+			</td>
+			<td>
+				<font color="white">FAQ</font>
+			</td>
+		</tr>
+	</table>
+
+	</div>
+<div class="top2">
+	<marquee style="padding-left: 150px;padding-right: 150px;font-size: 5;">
+		<b><font color="black"><a href=RTO.html class="a" style="color: black;">Welcome To Transport Departent Website...</a></font></b></marquee></div>
+<div class="left">
+	<font color="#D8D8D8">
+
+	<span><b class="ad"><button class="but_span" onclick="check()"><b style="color: white;">Date Of Booking</b></button></span>
+
+	<span><b class="ad"><button class="but_span" onclick="check()"><b style="color: white;">Timing slot</b></button></span>
+
+	<span><b class="ad"><button class="but_span" onclick="check()"><b style="color: white;">print</b></button></b></span>
+</font>
+</div>
+<div class="top3"></div>
+
+<div class="mid" align="center">
+	<h2 align=center>Welcome To user Login Page</h2><br><br><br>
+	<form name="admin_form" method="get" onsubmit="return(showtext1());" action="user_home.html" >
+	<table class="table" align="center">
+			<tr>
+				<td width="150px" id="ad" ><span class="span1">user Name:-</td>
+				<td> <input type="text" id="admin" name="admin"></td>
+			</span>
+			</tr>
+			<tr>
+				<td ><span class="span1" id="pass">Password :-</td> 
+				<td><input type="Password" name="pass" id="password"></td>
+				</span>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" name="admsubmit"  class="span1"></td></tr>
+		</table>
+		</form>
+				<marquee> <br><br><br><br><br><br><br>
+				<a href="head.png"><img class="img2" src="head.png"></a>
+				<a href="ibrant.jpg"> <img class="img2" src="ibrant.jpg"></a>
+				<a href="sarthi.jpg"> <img class="img2" src="sarathi.jpg"></a>
+				<a href="vahan.png"> <img src="vahan.png" class="img2"></a>
+				<a href="morth.png"> <img src="morth.png" class="img2"> </a>
+				<a href="mygov.jpg"><img src="mygov.jpg" class="img2"></a>
+				<a href="sms.jpg"><img src="sms.jpg" class="img2"></a>
+		</marquee>
+
+</div>
+
+
+<div class="right">
+
+	<article>
+
+		<p class="ad">Advertisement 1</p>
+
+		<p class="ad">Buy me</p>
+
+	</article>
+
+	<article>
+
+		<p class="ad">Advertisement 2</p>
+
+		<p class="ad">Buy me too</p>
+
+	</article>
+
+</div>
+
+
+<div class="bot">
+
+
+</div>
+
+
+</body>
+
+</html>
